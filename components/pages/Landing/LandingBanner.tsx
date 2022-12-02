@@ -3,7 +3,7 @@ function LandingBanner() {
     return (
         <div className="gen-p w-full pt-16 md:pt-24 space-y-10 md:space-y-20">
             <div className="w-full space-y-5">
-                <div className="font-warrior text-size7Mob md:text-size7 text-center max-w-xs md:max-w-xl mx-auto">
+                <div className="font-warrior text-size7Mob md:text-size7 text-priColor text-center max-w-xs md:max-w-xl mx-auto">
                     Go Where the Good Vibes Are
                 </div>
 
@@ -15,7 +15,7 @@ function LandingBanner() {
             </div>
 
             <div className="space-y-5">
-                <h1 className="text-size2Mob md:text-size2 font-semibold ">
+                <h1 className="text-size2Mob md:text-size2 font-semibold text-secColor ">
                     Find your next event
                 </h1>
 
@@ -32,7 +32,7 @@ function LandingBanner() {
                         <DefaultTextField placeholder="State, City..." />
                     </div>
 
-                    <button className="w-full md:py-7 py-5 px-4 bg-priColor col-span-3 rounded-lg md:rounded-none font-semibold">
+                    <button className="w-full md:py-7 py-5 px-4 bg-priColor text-bgColor1 col-span-3 rounded-lg md:rounded-none font-semibold">
                         Search
                     </button>
                 </div>

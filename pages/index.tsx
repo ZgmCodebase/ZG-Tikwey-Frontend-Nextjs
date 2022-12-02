@@ -12,7 +12,7 @@ const Home: NextPageWithLayout = () => {
     const hello = "sdfsa";
 
     return (
-        <div className="min-h-screen text-size1Mob md:text-size1  w-full bg-white text-textColor">
+        <div className="min-h-screen text-size1Mob md:text-size1  w-full bg-bgColor2 text-textColor">
             <LandingBanner />
 
             <MostPopularTicket />

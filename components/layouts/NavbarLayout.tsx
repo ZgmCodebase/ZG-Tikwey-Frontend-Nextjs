@@ -9,17 +9,23 @@ type NavbarLayoutProps = {
 
 function NavbarLayout({ children }: NavbarLayoutProps) {
     return (
-        <div>
-            <div className="gen-p py-5 bg-gray-400 flex justify-between items-center shadow-lg Navbar  ">
-                <div className=" flex items-center md:max-w-sm lg:max-w-md xl:max-w-lg w-full justify-between Navbar__left">
-                    <div className=" flex items-center Navbar__LogoContainer space-x-3 text-textColor text-size2 font-semibold">
+        <div className="">
+            <div className="gen-p py-3 bg-bgColor1 flex justify-between items-center  shadow-lg z-10   Navbar fixed w-full ">
+                <div className=" flex items-center md:max-w-sm lg:max-w-md xl:max-w-lg w-full justify-between Navbar__left ">
+                    {/* <div className=" flex items-center Navbar__LogoContainer space-x-3 text-textColor text-size2 font-semibold">
                         <div className="h-6 w-6 bg-white" />
                         <h1>LogoName</h1>
-                    </div>
+                    </div> */}
 
-                    <div className="md:block hidden Navbar__Navigation">
-                        <ul className="flex space-x-5 text-textColor">
-                            <li className="group  transition duration-300">
+                    <AppIcon
+                        src="/logo_full.svg"
+                        alt="logo"
+                        className="w-[100px] h-[40px] md:w-[200px] md:h-[60px] "
+                    />
+
+                    <div className="md:block hidden Navbar__Navigation font-semibold">
+                        <ul className="flex space-x-10 text-textColor">
+                            <li className="group  transition duration-300 text-priColor">
                                 <Link href={"/"}>
                                     <a>
                                         Home{" "}
@@ -60,7 +66,7 @@ function NavbarLayout({ children }: NavbarLayoutProps) {
                     <button className="btn">Sign Up</button>
                 </div>
             </div>
-            {children}
+            <div className="pt-20">{children}</div>
         </div>
     );
 }

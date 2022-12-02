@@ -50,12 +50,18 @@ function EventCards({
             {/* image with buttons */}
             <div className="h-52 relative">
                 <div className=" flex justify-between items-center px-3 py-2 absolute left-0 right-0 top-0">
-                    <div className="text-size2Mob md:text-size2 p-1 bg-gray-400 font-semibold rounded-xl">
+                    <div className="text-size2Mob md:text-size2 px-3 py-1 bg-priColor text-bgColor1 font-semibold rounded-xl">
                         {priceValue}
                     </div>
 
-                    <div className=" p-2 rounded-full bg-gray-400 cursor-pointer">
-                        <AppIcon src="/icons/upload.svg" alt="upload_icon" />
+                    <div className="relative ">
+                        <div className="h-10 w-10 rounded-full bg-greyColor blur-sm cursor-pointer" />
+                        <div className="h-10 w-10 rounded-full absolute top-0 flex justify-center items-center">
+                            <AppIcon
+                                src="/icons/upload.svg"
+                                alt="upload_icon"
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -63,11 +69,11 @@ function EventCards({
             </div>
 
             {/* event details */}
-            <div className="py-5 px-8 bg-gray-400 h-52">
+            <div className="py-5 px-8  h-52">
                 {/* Info */}
-                <div className="flex  items-start space-x-7 h-full">
+                <div className="flex  items-start space-x-7 h-full text-priColor">
                     {/* Date */}
-                    <div className="flex flex-col justify-start mt-12">
+                    <div className="flex flex-col justify-start mt-12 text-secColor">
                         {/* Month */}
                         <h1>{monthDayValue.month}</h1>
 
@@ -79,7 +85,7 @@ function EventCards({
 
                     {/* Name and location */}
 
-                    <div className="space-y-3 flex flex-col justify-evenly items-start h-full">
+                    <div className="space-y-1 flex flex-col  items-start h-full">
                         {/* Name */}
                         <h1 className="md:text-size3 text-size3Mob font-semibold w-full line-clamp-3 md:line-clamp-2 max-w-xs">
                             {nameOrTitle}
@@ -103,7 +109,7 @@ function NextEventsSection() {
                 <div className="w-full">
                     {/* Header and info */}
                     <div className="w-full space-y-7 flex flex-col items-center py-8 pt-16 ">
-                        <h1 className="font-warrior text-size5Mob md:text-size5 text-center">
+                        <h1 className="font-warrior text-size5Mob md:text-size5 text-center text-priColor">
                             Our Next Events
                         </h1>
                         <p className="text-center text-size1Mob md:text-size1 max-w-md md:max-w-3xl ">
