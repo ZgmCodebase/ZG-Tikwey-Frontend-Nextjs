@@ -10,7 +10,7 @@ type NavbarLayoutProps = {
 function NavbarLayout({ children }: NavbarLayoutProps) {
     return (
         <div className="">
-            <div className="gen-p py-3 bg-bgColor1 flex justify-between items-center  shadow-lg z-10   Navbar fixed w-full ">
+            <div className="gen-p py-3 bg-bgColor1 flex justify-between items-center  shadow-lg z-50   Navbar fixed w-full ">
                 <div className=" flex items-center md:max-w-sm lg:max-w-md xl:max-w-lg w-full justify-between Navbar__left ">
                     {/* <div className=" flex items-center Navbar__LogoContainer space-x-3 text-textColor text-size2 font-semibold">
                         <div className="h-6 w-6 bg-white" />
