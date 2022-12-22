@@ -20,8 +20,8 @@ const Home: NextPageWithLayout = () => {
     );
 };
 
-Home.getLayout = (children) => {
-    return <NavbarLayout>{children}</NavbarLayout>;
-};
+// Home.getLayout = (children) => {
+//     return <NavbarLayout>{children}</NavbarLayout>;
+// };
 
 export default Home;
