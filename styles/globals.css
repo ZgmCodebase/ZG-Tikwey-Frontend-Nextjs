@@ -35,10 +35,10 @@ font-style: normal;
     html {
         color-scheme: dark;
     }
-    /* body {
-        color: white;
-        background: black;
-    } */
+    body {
+        /* color: white; */
+        background: white;
+    }
 
 }
 
@@ -50,16 +50,19 @@ font-style: normal;
 
 @layer components{
   .btn1 {
-    @apply py-3 px-5 text-whiteColor bg-priColor rounded-md whitespace-nowrap
+    @apply py-3 px-5 text-whiteColor bg-priColor rounded-xl whitespace-nowrap
   }
   .btn2 {
-    @apply py-3 px-5  text-priColor bg-secColor rounded-md whitespace-nowrap
+    @apply py-3 px-5  text-priColor bg-secColor rounded-xl whitespace-nowrap
   }
   .btn3 {
-    @apply py-3  px-5 text-whiteColor bg-transparent rounded-md whitespace-nowrap
+    @apply py-3  px-5 text-whiteColor bg-transparent rounded-xl whitespace-nowrap
+  }
+  .btn4 {
+    @apply py-3  px-5  bg-whiteColor rounded-xl whitespace-nowrap
   }
   .btn-text{
-    @apply font-semibold
+    @apply  text-textColor
   }
   .gen-p{
     @apply md:px-10 px-5

@@ -20,7 +20,7 @@ module.exports = {
                 secColorDk: "",
                 sucColor: "",
                 sucColorDk: "",
-                accColor: "",
+                accColor: "#6085B5",
                 accColorDk: "",
                 bgColor: "#1E1E1E",
                 bgColorDk: "",
@@ -40,6 +40,8 @@ module.exports = {
                 size6: "40px",
                 size7: "60px",
                 size7Mob: "30px",
+                size8: "64px",
+                size9: "48px"
             },
         },
     },
