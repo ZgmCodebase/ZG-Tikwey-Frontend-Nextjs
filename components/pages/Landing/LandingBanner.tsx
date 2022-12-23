@@ -1,40 +1,54 @@
 import DefaultTextField from "../../shared/TextFields/DefaultTextField";
+
+function LandingBannerNavBar() {
+    return;
+}
+
 function LandingBanner() {
     return (
-        <div className="gen-p w-full pt-16 md:pt-24 space-y-10 md:space-y-20">
-            <div className="w-full space-y-5">
-                <div className="font-warrior text-size7Mob md:text-size7 text-center max-w-xs md:max-w-xl mx-auto">
-                    Go Where the Good Vibes Are
+        <div className="gen-p w-full pt-16 md:pt-24 space-y-10 md:space-y-20 bg-red-50">
+            <div className=" rounded-2xl bg-blue-400 w-full gen-p">
+                {/* Navbar */}
+                <div className="flex w-full justify-between  ">
+                    {/* Logo */}
+
+                    {/* Navigation */}
+                    <div>
+                        <li className="flex ">
+                            <ul>Home</ul>
+                            <ul>Events</ul>
+                            <ul>About</ul>
+                            <ul>Contact</ul>
+                        </li>
+                    </div>
+
+                    {/* login sign up buttons */}
+
+                    <div className="flex">
+                        <button>LOG IN</button>
+                        <button>Sign Up</button>
+                    </div>
                 </div>
 
-                <div className="text-center mx-auto max-w-3xl font-semibold">
-                    Discover great nights around you. Zero hidden fees, price
-                    match guarantee, group discounts and more. Because it should
-                    be this easy{" "}
-                </div>
-            </div>
+                {/* Content */}
+                <div>
+                    {/* Heading with a stupid design */}
+                    <h1 className="text-center max-w-4xl">EXPERIENCE MADE FOR THOSE WHO KNOW</h1>
 
-            <div className="space-y-5">
-                <h1 className="text-size2Mob md:text-size2 font-semibold ">
-                    Find your next event
-                </h1>
+                    {/* sub info for landing page */}
+                    <p className=" text-center">
+                        Lorem ipsum dolor sit amet consectetur. Felis dictum
+                        senectus dolor quis maecenas ac fringilla. Praesent
+                        purus malesuada eleifend at ac ultricies dolor proin.
+                        Pellentesque morbi quam platea quam. Congue.
+                    </p>
 
-                <div className="md:border-textColor md:border-[1px] flex flex-col md:grid md:grid-cols-11 rounded-3xl w-full  md:overflow-hidden space-y-5 md:space-y-0">
-                    <div className=" md:py-7 py-5 px-4 flex justify-center w-full md:col-span-4 border-[1px] md:border-0 md:border-r-[1px]  border-textColor rounded-lg md:rounded-none">
-                        <DefaultTextField placeholder="What are you looking for?" />
-                    </div>
-                    {/* <div className="flex w-1 bg-textColor" /> */}
-                    <div className="md:py-7 py-5 px-4  flex justify-center w-full md:col-span-2 border-[1px]  md:border-0 md:border-r-[1px] border-textColor rounded-lg md:rounded-none">
-                        <DefaultTextField placeholder="Select Category" />
-                    </div>
-                    {/* <div className="flex w-1 bg-textColor"/> */}
-                    <div className="md:py-7 py-5 px-4  flex justify-center w-full md:col-span-2 border-[1px]  md:border-0 md:border-r-[1px] border-textColor rounded-lg md:rounded-none">
-                        <DefaultTextField placeholder="State, City..." />
-                    </div>
+                    {/* buttons */}
+                    <div className="flex w-full ">
 
-                    <button className="w-full md:py-7 py-5 px-4 bg-priColor col-span-3 rounded-lg md:rounded-none font-semibold">
-                        Search
-                    </button>
+                        <button className="btn2">Find your next event</button>
+                        <button className="btn1">Create an event</button>
+                    </div>
                 </div>
             </div>
         </div>

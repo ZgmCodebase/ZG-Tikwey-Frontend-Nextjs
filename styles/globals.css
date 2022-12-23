@@ -49,8 +49,14 @@ font-style: normal;
 }
 
 @layer components{
-  .btn {
-    @apply py-2 font-semibold px-3 text-textColor bg-white rounded-md whitespace-nowrap
+  .btn1 {
+    @apply py-3 px-5 text-whiteColor bg-priColor rounded-md whitespace-nowrap
+  }
+  .btn2 {
+    @apply py-3 px-5  text-priColor bg-secColor rounded-md whitespace-nowrap
+  }
+  .btn3 {
+    @apply py-3  px-5 text-whiteColor bg-transparent rounded-md whitespace-nowrap
   }
   .btn-text{
     @apply font-semibold

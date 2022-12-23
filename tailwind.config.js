@@ -14,9 +14,9 @@ module.exports = {
             },
             colors: {
                 textColor: "rgba(0, 0, 0, 1)",
-                priColor: "#D9D9D9",
+                priColor: "rgba(0, 150, 199, 1)",
                 priColorDk: "",
-                secColor: "",
+                secColor: "rgba(191, 225, 240, 1)",
                 secColorDk: "",
                 sucColor: "",
                 sucColorDk: "",
@@ -24,6 +24,7 @@ module.exports = {
                 accColorDk: "",
                 bgColor: "#1E1E1E",
                 bgColorDk: "",
+                whiteColor: "rgba(255, 255, 255, 1)"
             },
             fontSize: {
                 size1: "16px",
