@@ -41,7 +41,9 @@ module.exports = {
                 size7: "60px",
                 size7Mob: "30px",
                 size8: "64px",
-                size9: "48px"
+                size8Mob: "20px",
+                size9: "48px",
+                size9Mob: "20px",
             },
         },
     },

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import DefaultTextField from "../../shared/TextFields/DefaultTextField";
-import {RiSearch2Line} from "react-icons/ri"
+import {RiSearch2Line, RiMenu3Fill} from "react-icons/ri"
 
 function LandingBannerNavBar() {
     return;
@@ -32,7 +32,7 @@ function LandingBanner() {
                         />
                     </div>
                     {/* Navigation */}
-                    <div>
+                    <div className="md:block hidden">
                         <li className="flex space-x-6 text-size2Mob md:text-size2  text-whiteColor">
                             <ul className="font-semibold cursor-pointer">
                                 Home
@@ -51,16 +51,20 @@ function LandingBanner() {
 
                     {/* login sign up buttons */}
 
-                    <div className="flex">
+                    <div className="md:flex hidden ">
                         <button className="btn3">LOG IN</button>
                         <button className="btn4">Sign Up</button>
+                    </div>
+
+                    <div className="md:hidden block text-white text-xl">
+                        <RiMenu3Fill/>
                     </div>
                 </div>
 
                 {/* Content */}
                 <div className="z-10 relative py-20 mt-10">
                     {/* Heading with a stupid design */}
-                    <h1 className="text-center max-w-4xl text-whiteColor mx-auto text-size8 font-semibold leading-[1.4]">
+                    <h1 className="text-center max-w-4xl text-whiteColor mx-auto text-size8Mob md:text-size8 font-semibold leading-[1.4]">
                         EXPERIENCE MADE FOR THOSE WHO KNOW
                     </h1>
 
@@ -73,20 +77,22 @@ function LandingBanner() {
                     </div>
 
                     {/* buttons */}
-                    <div className="flex w-full justify-between max-w-lg mx-auto pt-10 ">
+                    <div className="flex max-w-[180px] space-y-4 md:space-y-0 md:w-full flex-col md:flex-row md:justify-between md:max-w-lg mx-auto pt-10 ">
 
-                        <button className="btn2">Find your next event</button>
-                        <button className="btn1">Create an event</button>
+                        <button className="btn2 ">Find your next event</button>
+                        <button className="btn1 ">Create an event</button>
                     </div>
 
 
-                    <div className="bg-whiteColor flex w-full md:max-w-2xl rounded-lg p-3 mx-auto items-center mt-20 ease-in-out duration-500  hover:shadow-2xl hover:shadow-priColor">
+                    <div className="bg-whiteColor flex w-full md:max-w-2xl rounded-lg p-3 mx-auto items-center mt-10 md:mt-20 ease-in-out duration-500 hover:shadow-lg  md:hover:shadow-2xl hover:shadow-priColor">
                         {/* icon */}
-                        <RiSearch2Line className="text-priColor text-4xl" stroke="20px"/>
+                        <RiSearch2Line className="text-priColor text-4xl md:block hidden" stroke="20px"/>
                         {/* textfield */}
                         <input className="w-full mx-5 bg-whiteColor" placeholder="Search by team, artist, event, or venue"/>
-                        {/* button */}
-                        <button className="btn1 px-8">Search</button>
+                        {/* search button for large screens*/}
+                        <button className="btn1 px-8 md:block hidden">Search</button>
+                        {/* Search button for small screens */}
+                        <RiSearch2Line className="text-priColor text-4xl block md:hidden" stroke="20px"/>
                     </div>
                 </div>
             </div>

@@ -3,9 +3,9 @@ import {RxArrowBottomRight} from "react-icons/rx"
 
 function UpcomingEvents() {
     return (
-        <div className="gen-p w-full my-20">
+        <div className="gen-p w-full my-10 md:my-20">
             {/* title */}
-            <h1 className="text-size9 max-w-4xl mx-auto text-center font-semibold py-10">Categories for Upcoming Events</h1>
+            <h1 className="text-size9Mob md:text-size9 max-w-4xl mx-auto text-center font-bold py-10">Categories for Upcoming Events</h1>
 
             {/* Filters */}
 
