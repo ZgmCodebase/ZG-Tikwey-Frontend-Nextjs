@@ -15,12 +15,13 @@ function UpcomingEvents() {
             <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
   
             <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
-            <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
-            <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
-            <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
-            <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
-            <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
-            <EventCategoryCard category="House Party" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Concert" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Pool Party" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Webinar/Seminar" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Sport" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Club Party" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Meet and Greet" src="/images/index/event_category1.png"/>
+            <EventCategoryCard category="Fashion and Design" src="/images/index/event_category1.png"/>
             </div>
 
         </div>
