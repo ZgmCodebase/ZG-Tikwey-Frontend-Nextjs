@@ -14,9 +14,9 @@ const Home: NextPageWithLayout = () => {
         <div className="min-h-screen text-size1Mob md:text-size1  w-full bg-bgColor2 text-textColor">
             <LandingBanner />
             <UpcomingEvents/>
-            <MostPopularTicket />
+            {/* <MostPopularTicket />
             <NextEventsSection />
-            <Testimonials/>
+            <Testimonials/> */}
         </div>
     );
 };
