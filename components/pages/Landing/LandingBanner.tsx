@@ -84,7 +84,7 @@ function LandingBanner() {
                     </div>
 
 
-                    <div className="bg-whiteColor flex w-full md:max-w-2xl rounded-lg p-3 mx-auto items-center mt-10 md:mt-20 ease-in-out duration-500 hover:shadow-lg  md:hover:shadow-2xl hover:shadow-priColor">
+                    <div className="bg-whiteColor flex w-full md:max-w-2xl rounded-lg p-3 mx-auto items-center mt-10 md:mt-20 ease-in-out duration-500 hover:shadow-lg hover:shadow-priColor">
                         {/* icon */}
                         <RiSearch2Line className="text-priColor text-4xl md:block hidden" stroke="20px"/>
                         {/* textfield */}
