@@ -44,6 +44,8 @@ module.exports = {
                 size8Mob: "20px",
                 size9: "48px",
                 size9Mob: "20px",
+                size10: "24px",
+                size10Mob: "14px",
             },
         },
     },

@@ -35,7 +35,7 @@ function EventCategoryCard ({category, src}: {category:string, src:string}) {
 
         <div className="absolute top-0 right-0 left-0 bottom-0 flex  z-20 justify-end items-end space-y-5 p-10 ">
 
-        <h1 className="text-whiteColor absolute bottom-20 left-10 text-xl font-semibold">{category}</h1>
+        <h1 className="text-whiteColor absolute bottom-28 left-10 text-xl font-semibold">{category}</h1>
 
         <div className="w-12 h-12 rounded-full group-hover:bg-priColor duration-300 ease-in border-whiteColor group-hover:border-transparent border-[1px] flex justify-center items-center">
             <RxArrowBottomRight className="text-2xl text-whiteColor"/>

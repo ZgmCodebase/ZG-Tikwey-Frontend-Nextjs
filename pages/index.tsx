@@ -1,11 +1,7 @@
-import NavbarLayout from '../components/layouts/NavbarLayout';
 import LandingBanner from '../components/pages/Landing/LandingBanner';
-import MostPopularTicket from '../components/pages/Landing/MostPopularTicket';
-import NextEventsSection from '../components/pages/Landing/NextEventsSection';
 import { NextPageWithLayout } from './_app';
 
-import type { NextPage } from "next";
-import Testimonials from '../components/pages/Landing/Testimonials';
+import ExploreBestShow from '../components/pages/Landing/ExploreBestShow';
 import UpcomingEvents from '../components/pages/Landing/UpcomingEvents';
 const Home: NextPageWithLayout = () => {
     const hello = "sdfsa";
@@ -14,6 +10,7 @@ const Home: NextPageWithLayout = () => {
         <div className="min-h-screen text-size1Mob md:text-size1  w-full bg-bgColor2 text-textColor">
             <LandingBanner />
             <UpcomingEvents/>
+            <ExploreBestShow/>
             {/* <MostPopularTicket />
             <NextEventsSection />
             <Testimonials/> */}
