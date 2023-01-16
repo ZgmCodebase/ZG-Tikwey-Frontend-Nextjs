@@ -1,4 +1,5 @@
-import Image from "next/image";import {RxArrowBottomRight, RxArrowTopRight} from "react-icons/rx"
+import Image from "next/image";
+import { RxArrowBottomRight, RxArrowTopRight } from "react-icons/rx";
 
 function ExploreBestShow() {
     return (
@@ -14,7 +15,7 @@ function ExploreBestShow() {
                 <div className="flex-1 max-w-4xl px-10 ">
                     <AnimatedEventCard />
                 </div>
-                <div className="flex flex-col justify-center items-center space-y-9">
+                <div className="md:flex flex-col justify-center items-center space-y-9 hidden">
                     {/* Up arrow */}
                     <div className="w-10 h-10 rounded-full bg-priColor opacity-60 hover:opacity-100 cursor-pointer text-whiteColor flex justify-center items-center">
                         <RxArrowTopRight />
@@ -29,45 +30,61 @@ function ExploreBestShow() {
     );
 }
 
-
-function AnimatedEventCard(){
+function AnimatedEventCard() {
     return (
         <div className="w-full">
             {/* Image */}
             <div className="h-[40vh] bg-gray-700 rounded-xl relative overflow-hidden">
-                <Image src={"/images/index/explore_bestshows.png"} alt="best_show" layout="fill" objectFit="cover"/>
+                <Image
+                    src={"/images/index/explore_bestshows.png"}
+                    alt="best_show"
+                    layout="fill"
+                    objectFit="cover"
+                />
             </div>
 
-            {/* Info */}
-            <div className="flex justify-between items-start pt-9">
-                {/* date */}
-                <div className="text-size10Mob md:text-size10 font-medium">
-                    <p>Dec 20</p>
-                    <p>8:00pm</p>
-                </div>
-
-                {/* Name, Location, and ticket Button */}
-                <div className="md:text-size2Mob text-size2 space-y-5 flex flex-col items-end">
-                    <p className="text-size10Mob md:text-size10">
-                        Mr MONEY WITH THE VIBE
-                    </p>
-                    <div className="flex justify-between space-x-5">
-                        <AddressTag address="02, Academy London" />
-                        <CategoryTag category="CONCERT" />
+            <div>
+                {/* Info */}
+                <div className="flex justify-between items-start pt-9">
+                    {/* date */}
+                    <div className="text-size10Mob md:text-size10 font-medium">
+                        <p>Dec 20</p>
+                        <p>8:00pm</p>
                     </div>
 
-                    <button className="btn1">Buy Ticket</button>
+                    {/* Name, Location, and ticket Button */}
+                    <div className=" text-size2Mob md:text-size2 space-y-2 md:space-y-5 flex flex-col items-end pl-10">
+                        <p className="text-size10Mob md:text-size10">
+                            Mr MONEY WITH THE VIBE
+                        </p>
+                        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-end md:items-start md:justify-between md:space-x-5">
+                            <AddressTag address="02, Academy London" />
+                            <CategoryTag category="CONCERT" />
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div className="flex justify-end py-3 md:py-10">
+                <button className="btn1">Buy Ticket</button>
             </div>
         </div>
     );
 }
 
-function AddressTag({address}: {address:string}){
-    return <div className="py-2 px-5 bg-secColor text-accColor rounded-xl ">{address}</div>
+function AddressTag({ address }: { address: string }) {
+    return (
+        <div className="py-2 px-5 bg-secColor text-accColor rounded-xl text-center w-max ">
+            {address}
+        </div>
+    );
 }
 
-function CategoryTag({category}: {category:string}){
-    return <div className="py-2 px-5 bg-secColor text-accColor rounded-xl">{category}</div>
+function CategoryTag({ category }: { category: string }) {
+    return (
+        <div className="py-2 px-5 bg-secColor text-accColor rounded-xl text-center w-max">
+            {category}
+        </div>
+    );
 }
 export default ExploreBestShow;

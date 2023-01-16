@@ -30,7 +30,7 @@ module.exports = {
                 size1: "16px",
                 size1Mob: "12px",
                 size2: "18px",
-                size2Mob: "14px",
+                size2Mob: "12px",
                 size3: "20px",
                 size3Mob: "16px",
                 size4: "22px",

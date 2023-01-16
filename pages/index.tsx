@@ -3,6 +3,8 @@ import { NextPageWithLayout } from './_app';
 
 import ExploreBestShow from '../components/pages/Landing/ExploreBestShow';
 import UpcomingEvents from '../components/pages/Landing/UpcomingEvents';
+import MostPopularTicket from '../components/pages/Landing/MostPopularTicket';
+import CheckoutPopularEvent from '../components/pages/Landing/CheckoutPopularEvent';
 const Home: NextPageWithLayout = () => {
     const hello = "sdfsa";
 
@@ -11,9 +13,9 @@ const Home: NextPageWithLayout = () => {
             <LandingBanner />
             <UpcomingEvents/>
             <ExploreBestShow/>
-            {/* <MostPopularTicket />
-            <NextEventsSection />
-            <Testimonials/> */}
+            <CheckoutPopularEvent />
+            {/* <NextEventsSection />
+            <Testimonials/> */} 
         </div>
     );
 };
