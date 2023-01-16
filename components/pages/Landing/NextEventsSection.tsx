@@ -50,7 +50,7 @@ function EventCards({
         return priceFormatter.format(price);
     }, [price, window]);
 
-    useEffect(() => {});
+    useEffect(() => {}, []);
 
     return (
         <div className="border-[1px]  border-priColor rounded-xl w-full overflow-hidden hover:scale-105 transition-transform duration-150 ease-in">

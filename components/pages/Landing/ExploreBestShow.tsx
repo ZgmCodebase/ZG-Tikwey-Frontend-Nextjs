@@ -3,7 +3,7 @@ import { RxArrowBottomRight, RxArrowTopRight } from "react-icons/rx";
 
 function ExploreBestShow() {
     return (
-        <div className="gen-p pt-32 pb-10">
+        <div className="gen-p pt-10 md:pt-32 pb-10">
             {/* Title */}
             <h1 className="text-size9Mob md:text-size9 max-w-4xl mx-auto text-center font-bold py-10">
                 Explore The Best Shows
